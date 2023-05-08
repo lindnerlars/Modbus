@@ -1,0 +1,11 @@
+﻿  Modbus.cpp
+x64\Debug\Modbus.obj : warning LNK4042: object specified more than once; extras ignored
+     Creating library D:\Projects\Modbus\x64\Debug\Modbus.lib and object D:\Projects\Modbus\x64\Debug\Modbus.exp
+modbus-rtu.obj : error LNK2019: unresolved external symbol __imp_modbus_free referenced in function modbus_new_rtu
+modbus-tcp.obj : error LNK2001: unresolved external symbol __imp_modbus_free
+modbus-rtu.obj : error LNK2019: unresolved external symbol _modbus_init_common referenced in function modbus_new_rtu
+modbus-tcp.obj : error LNK2001: unresolved external symbol _modbus_init_common
+modbus-rtu.obj : error LNK2019: unresolved external symbol _modbus_receive_msg referenced in function _modbus_rtu_receive
+modbus-tcp.obj : error LNK2001: unresolved external symbol _modbus_receive_msg
+modbus-tcp.obj : error LNK2019: unresolved external symbol strlcpy referenced in function modbus_new_tcp
+D:\Projects\Modbus\x64\Debug\Modbus.exe : fatal error LNK1120: 4 unresolved externals

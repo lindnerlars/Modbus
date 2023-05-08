@@ -1,0 +1,29 @@
+﻿Debug\Modbus.obj : warning LNK4042: object specified more than once; extras ignored
+     Creating library D:\Projects\Modbus\Debug\Modbus.lib and object D:\Projects\Modbus\Debug\Modbus.exp
+LINK : warning LNK4217: symbol '_modbus_free' defined in 'modbus.obj' is imported by 'modbus-rtu.obj' in function '_modbus_new_rtu'
+LINK : warning LNK4217: symbol '_modbus_free' defined in 'modbus.obj' is imported by 'modbus-tcp.obj' in function '__modbus_tcp_pi_connect'
+LINK : warning LNK4217: symbol '_modbus_set_bits_from_bytes' defined in 'modbus-data.obj' is imported by 'modbus.obj' in function '_modbus_reply'
+modbus-tcp.obj : error LNK2019: unresolved external symbol __imp__accept@12 referenced in function _modbus_tcp_accept
+modbus-tcp.obj : error LNK2019: unresolved external symbol __imp__bind@12 referenced in function _modbus_tcp_listen
+modbus-tcp.obj : error LNK2019: unresolved external symbol __imp__closesocket@4 referenced in function __modbus_tcp_connect
+modbus-tcp.obj : error LNK2019: unresolved external symbol __imp__connect@12 referenced in function __connect
+modbus-tcp.obj : error LNK2019: unresolved external symbol __imp__ioctlsocket@12 referenced in function __modbus_tcp_set_ipv4_options
+modbus-tcp.obj : error LNK2019: unresolved external symbol __imp__getsockopt@20 referenced in function __connect
+modbus-tcp.obj : error LNK2019: unresolved external symbol __imp__htonl@4 referenced in function _modbus_tcp_listen
+modbus-tcp.obj : error LNK2019: unresolved external symbol __imp__htons@4 referenced in function __modbus_tcp_connect
+modbus-tcp.obj : error LNK2019: unresolved external symbol __imp__listen@8 referenced in function _modbus_tcp_listen
+modbus-tcp.obj : error LNK2019: unresolved external symbol __imp__recv@16 referenced in function __modbus_tcp_recv
+modbus-tcp.obj : error LNK2019: unresolved external symbol __imp__select@20 referenced in function __modbus_tcp_flush
+modbus-tcp.obj : error LNK2019: unresolved external symbol __imp__send@16 referenced in function __modbus_tcp_send
+modbus-tcp.obj : error LNK2019: unresolved external symbol __imp__setsockopt@20 referenced in function __modbus_tcp_set_ipv4_options
+modbus-tcp.obj : error LNK2019: unresolved external symbol __imp__shutdown@8 referenced in function __modbus_tcp_close
+modbus-tcp.obj : error LNK2019: unresolved external symbol __imp__socket@12 referenced in function __modbus_tcp_connect
+modbus-tcp.obj : error LNK2019: unresolved external symbol __imp__WSAStartup@8 referenced in function __modbus_tcp_init_win32
+modbus-tcp.obj : error LNK2019: unresolved external symbol __imp__WSAGetLastError@0 referenced in function __connect
+modbus.obj : error LNK2001: unresolved external symbol __imp__WSAGetLastError@0
+modbus-tcp.obj : error LNK2019: unresolved external symbol __imp__getaddrinfo@16 referenced in function __modbus_tcp_pi_connect
+modbus-tcp.obj : error LNK2019: unresolved external symbol __imp__freeaddrinfo@4 referenced in function __modbus_tcp_pi_connect
+modbus-tcp.obj : error LNK2019: unresolved external symbol __imp__inet_pton@12 referenced in function __modbus_tcp_connect
+modbus-tcp.obj : error LNK2019: unresolved external symbol _inet_ntop@16 referenced in function _modbus_tcp_accept
+MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol _main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+D:\Projects\Modbus\Debug\Modbus.exe : fatal error LNK1120: 22 unresolved externals
